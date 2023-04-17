@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Se realizo un encriptador para el programa Oracle One con Alura">
+    <link rel="shortcut icon" href="./candado.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador</title>
+</head>
+<header class="header">
+    <h1><class="head">Encriptador</h1>
+</header>
+<body>
+    <section class="principal">
+        <article class="article-uno">
+            <form onreset="mostrarOcultarDivs()">
+                <textarea class="textarea-original" placeholder="Ingrese el texto que deseas encriptar" name="texto" minlength="1" autofocus  id="textoOriginal" oninput="mostrarOcultarDivs()"></textarea>
+                <br>
+                <input class="boton" type="button" value="Encriptar" id="encriptar" name="Encriptar" onclick="procesar()">
+                <input class="boton" type="reset" value="Limpiar" onclick="borrar()">
+            </form>
+        </article>
+        <article class="article-dos" id="tectoCod">
+            <form>
+                <textarea class="textarea-modificada" placeholder="No se a ingresa algun texto" disabled id="textoEncriptado"></textarea>
+                <br>
+                <input class="boton copiar" type="button" name="copiar" value="Copiar" id="copiar" onclick="procesarBotonCopiar()">
+            </form>
+        </article>
+
+    </section>
+<script src="main.js"></script>
+</body>
+</html>     
